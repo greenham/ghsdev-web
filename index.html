@@ -15,12 +15,12 @@
     <!-- =============================================================== -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link
-      href="//fonts.googleapis.com/css?family=Montserrat:400,700"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
       rel="stylesheet"
       type="text/css"
     />
     <link
-      href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
     <link href="assets/css/theme.css" rel="stylesheet" />
@@ -80,11 +80,11 @@
             <div class="col-sm-12">
               <h1 class="text-center">
                 Hello!<br />My name is Chris.<br /><span style="font-size: 75%"
-                  >I'm a full-stack web developer with over 15 years of
+                  >I'm a full-stack web developer with over 20 years of
                   experience.</span
                 ><br />
                 <div class="logos">
-                  <a href="//lnkd.in/svu8Eg" target="_blank"
+                  <a href="https://lnkd.in/svu8Eg" target="_blank"
                     ><i class="fa fa-linkedin fa-border fa-2x"></i
                   ></a>
                   <a href="https://github.com/greenham" target="_blank"
@@ -140,7 +140,11 @@
           </div>
           <div class="col-sm-4 margin-bottom-xs">
             <h4 align="center">Web Application</h4>
-            <a class="wrapper-portfolio" href="http://v2w.ghsdev.me" target="_blank">
+            <a
+              class="wrapper-portfolio"
+              href="http://v2w.ghsdev.me"
+              target="_blank"
+            >
               <img
                 class="img-responsive"
                 src="assets/images/volum-io-sm.png"
@@ -158,7 +162,11 @@
           </div>
           <div class="col-sm-4 margin-bottom-xs">
             <h4 align="center">API Integration</h4>
-            <a class="wrapper-portfolio" href="https://github.com/greenham/top-retweet-streamer" target="_blank">
+            <a
+              class="wrapper-portfolio"
+              href="https://github.com/greenham/top-retweet-streamer"
+              target="_blank"
+            >
               <img
                 class="img-responsive"
                 src="assets/images/top-rt-streamer.png"
@@ -201,7 +209,7 @@
             <h4 align="center">Discord+Twitch Bot</h4>
             <a
               class="wrapper-portfolio"
-              href="//helpa.alttp.run"
+              href="https://helpasaur.com"
               target="_blank"
             >
               <img
@@ -262,7 +270,7 @@
             <h2>MY SKILLS</h2>
             <p>
               I am a reliable and resourceful full-stack web developer with over
-              15 years of experience designing and programming elegant software
+              20 years of experience designing and programming elegant software
               solutions for unique industries across the web. Running a
               successful web development and consulting business for over a
               decade has taught me the value of smart, organized work, given me
@@ -494,7 +502,8 @@
         <div class="row">
           <div class="col-sm-6">
             <p class="copyright">
-              2020 &copy; Green Ham Solutions - All Rights Reserved
+              <span id="current-year"></span> &copy; Green Ham Solutions - All
+              Rights Reserved
             </p>
           </div>
           <div class="col-sm-6">
@@ -524,13 +533,17 @@
     <script src="assets/js/smooth-scroll.js"></script>
     <script src="assets/js/jRespond.min.js"></script>
     <script src="assets/js/script.js"></script>
-
     <script>
-      (function(i, s, o, g, r, a, m) {
+      $(document).ready(function () {
+        $("#current-year").text(new Date().getFullYear());
+      });
+    </script>
+    <script>
+      (function (i, s, o, g, r, a, m) {
         i["GoogleAnalyticsObject"] = r;
         (i[r] =
           i[r] ||
-          function() {
+          function () {
             (i[r].q = i[r].q || []).push(arguments);
           }),
           (i[r].l = 1 * new Date());
@@ -542,7 +555,7 @@
         window,
         document,
         "script",
-        "//www.google-analytics.com/analytics.js",
+        "https://www.google-analytics.com/analytics.js",
         "ga"
       );
 

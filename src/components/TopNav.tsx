@@ -3,9 +3,9 @@ import logo from "../assets/logo.png";
 
 function TopNav() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary" sticky="top">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="#top">
           <Stack direction="horizontal" gap={2}>
             <img
               alt=""

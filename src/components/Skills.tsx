@@ -1,4 +1,4 @@
-import { Col, Container, ListGroup, Row } from "react-bootstrap";
+import { Alert, Col, Container, ListGroup, Row } from "react-bootstrap";
 
 function Skills({ id }: { id: string }) {
   const skills = [
@@ -65,8 +65,17 @@ function Skills({ id }: { id: string }) {
 
   return (
     <Container id={id} className="my-5">
-      <h1 className="display-1">Skills</h1>
-      <Row xs={1} sm={2} md={3} lg={4} className="g-4 py-5">
+      <h1 className="display-1">
+        <i className="fa-regular fa-rectangle-list px-2"></i>Skills
+      </h1>
+      <Alert variant="info">
+        <i className="fa-solid fa-pencil px-2"></i>
+        <strong>Note</strong> - My best skills are{" "}
+        <strong>adaptability and resourcefulness</strong>. With my strong
+        foundation and broad experience, I have the ability to pick up and learn
+        new technologies quickly.
+      </Alert>
+      <Row xs={1} sm={2} md={3} lg={4} className="g-4 pb-5">
         {skills.map((skill, skillIndex) => {
           return (
             <Col key={skillIndex}>

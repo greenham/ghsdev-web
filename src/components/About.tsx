@@ -32,7 +32,7 @@ function About({ id }: { id: string }) {
               className="me-md-2 fw-bold"
               href="#portfolio"
             >
-              <i className="fa-solid fa-timeline px-2"></i>See my work
+              <i className="fa-solid fa-swatchbook px-2"></i>See my work
             </Button>
             <Button
               variant="outline-secondary"

@@ -38,9 +38,9 @@ function About({ id }: { id: string }) {
               variant="outline-secondary"
               size="lg"
               className="px-4"
-              href="#contact"
+              href="#connect"
             >
-              <i className="fa-regular fa-comments px-2"></i>Contact me
+              <i className="fa-regular fa-comments px-2"></i>Connect with me
             </Button>
           </div>
         </Col>

@@ -3,7 +3,7 @@ import logo from "../assets/logo.png";
 
 function About({ id }: { id: string }) {
   return (
-    <Container id={id} className="py-5 my-5">
+    <Container id={id} className="my-5">
       <Row className="p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
         <Col lg={7} className="p-3 p-lg-5 pt-lg-3">
           <h2>👋 Hello!</h2>

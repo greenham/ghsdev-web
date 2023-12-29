@@ -22,8 +22,8 @@ function TopNav() {
             </Stack>
           </Stack>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Toggle aria-controls="top-nav" />
+        <Navbar.Collapse id="top-nav">
           <Nav className="me-auto">
             <Nav.Link href="#about">
               <i className="fa-solid fa-user-tie px-2"></i>About Me
@@ -42,6 +42,15 @@ function TopNav() {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
+        <Navbar className="justify-content-end">
+          <Nav.Link
+            href="https://github.com/greenham"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fa-brands fa-github px-2"></i>GitHub
+          </Nav.Link>
+        </Navbar>
       </Container>
     </Navbar>
   );

@@ -9,11 +9,11 @@ function Portfolio({ id }: { id: string }) {
       title: "Arcade Pit Scheduler",
       url: "https://schedule.arcadep.it",
       imageUrl: arcadePitScheduler,
-      tags: ["React", "Koa", "MongoDB", "Twitch API"],
+      tags: ["React", "Koa", "MongoDB", "Twitch OAuth"],
       description: (
         <>
-          A web app that allows contestants to apply to the virtual game show{" "}
-          <em>ArcadePit</em>,{" "}
+          A web app that allows contestants to log in via Twitch and apply to
+          the virtual game show <em>ArcadePit</em>,{" "}
           <a
             href="https://twitch.tv/smight"
             target="_blank"
@@ -21,7 +21,7 @@ function Portfolio({ id }: { id: string }) {
           >
             broadcast weekly on Twitch
           </a>
-          , and provides an admin panel to manage selections and scheduling.
+          . Also provides an admin panel to manage selections and scheduling.
         </>
       ),
     },
@@ -29,13 +29,20 @@ function Portfolio({ id }: { id: string }) {
       title: "ForeverGrind.fm",
       url: "https://forevergrind.fm",
       imageUrl: fgfmThumbnail,
-      tags: ["React", "Redux", "Koa", "Socket.io", "OBS Studio"],
+      tags: [
+        "React",
+        "Redux",
+        "Koa",
+        "Socket.io",
+        "OBS Studio",
+        "Twitch OAuth",
+      ],
       description: (
         <>
           An automated, continuous stream of video content and music, streaming
           to Twitch via OBS Studio and controlled by a custom bot using Node.js.
-          Also provides a web interface for users to browse+request videos
-          on-demand and an admin panel for easy remote management.
+          Also provides chat and web interfaces for users to browse+request
+          videos on-demand and an admin panel for easy remote management.
         </>
       ),
     },
@@ -43,16 +50,27 @@ function Portfolio({ id }: { id: string }) {
       title: "HelpasaurKing",
       url: "https://helpasaur.com",
       imageUrl: helpaThumbnail,
-      tags: ["Docker", "Discord.js", "React", "MongoDB", "IRC"],
+      tags: [
+        "Docker",
+        "React",
+        "GitHub Actions",
+        "Discord.js",
+        "IRC",
+        "MongoDB",
+      ],
       description: (
         <>
-          Used by the <em>The Legend of Zelda: A Link to the Past</em>
+          Used by the <em>The Legend of Zelda: A Link to the Past</em>{" "}
           speedrunning community, this Discord+Twitch bot provides a repository
           of helpful links, alerts for when ALttP streams go live, and
           automation to assist with various tasks like creating race rooms.
           Includes a web-based admin panel to manage commands and configuration.
         </>
       ),
+      links: {
+        href: "https://github.com/greenham/helpasaur-king",
+        label: "View on GitHub",
+      },
     },
     {
       title: "volum.io",
@@ -68,6 +86,10 @@ function Portfolio({ id }: { id: string }) {
           transition to cooking-by-weight easy and accessible to everyone.
         </>
       ),
+      links: {
+        href: "https://github.com/greenham/volum.io",
+        label: "View on GitHub",
+      },
     },
   ];
 
@@ -84,10 +106,10 @@ function Portfolio({ id }: { id: string }) {
                     variant="top"
                     src={item.imageUrl}
                     width="400"
-                    height="300"
+                    height="350"
                   />
                 </a>
-                <Card.Body className="flex-grow-1">
+                <Card.Body className="flex-grow-1 py-5">
                   <Card.Title>
                     <Card.Link href={item.url}>
                       <h4>{item.title}</h4>
@@ -96,6 +118,15 @@ function Portfolio({ id }: { id: string }) {
                   <Card.Text>
                     <div className="lead">{item.description}</div>
                   </Card.Text>
+                  {item.links && (
+                    <Card.Link
+                      href={item.links.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {item.links.label}
+                    </Card.Link>
+                  )}
                 </Card.Body>
                 <Card.Footer>
                   <Stack

@@ -82,7 +82,7 @@ function Portfolio({ id }: { id: string }) {
       },
     },
     {
-      title: "volum.io",
+      title: "v2w.app",
       url: "https://v2w.app",
       imageUrl: v2wThumbnail,
       tags: ["React", "TypeScript", "Vite", "GitHub Pages"],

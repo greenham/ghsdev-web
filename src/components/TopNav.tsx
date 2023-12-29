@@ -3,22 +3,20 @@ import logo from "../assets/logo.png";
 
 function TopNav() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary" sticky="top">
+    <Navbar expand="lg" className="bg-success" sticky="top">
       <Container>
         <Navbar.Brand href="#top">
           <Stack direction="horizontal" gap={2}>
             <img
               alt=""
               src={logo}
-              width="64"
-              height="64"
+              width="48"
+              height="48"
               className="d-inline-block align-top"
             />
             <Stack direction="vertical" gap={0}>
-              <h3 className="mb-0">Green Ham Solutions</h3>
-              <small className="fs-6">
-                Custom Web Development & Consulting
-              </small>
+              <h4 className="mb-0 fw-bold">greenHam</h4>
+              <small className="fs-6 text-muted">Senior Web Developer</small>
             </Stack>
           </Stack>
         </Navbar.Brand>
@@ -34,11 +32,8 @@ function TopNav() {
             <Nav.Link href="#skills">
               <i className="fa-regular fa-rectangle-list px-2"></i>Skills
             </Nav.Link>
-            <Nav.Link href="#services">
-              <i className="fa-solid fa-bell-concierge px-2"></i>Services
-            </Nav.Link>
-            <Nav.Link href="#contact">
-              <i className="fa-regular fa-comments px-2"></i>Contact
+            <Nav.Link href="#connect">
+              <i className="fa-regular fa-handshake px-2"></i>Connect
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

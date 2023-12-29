@@ -78,7 +78,10 @@ function Skills({ id }: { id: string }) {
                 <ListGroup>
                   {skill.items.map((item, itemIndex) => {
                     return (
-                      <ListGroup.Item key={itemIndex}>{item}</ListGroup.Item>
+                      <ListGroup.Item key={itemIndex}>
+                        <i className="fa-regular fa-square-check px-2"></i>
+                        {item}
+                      </ListGroup.Item>
                     );
                   })}
                 </ListGroup>

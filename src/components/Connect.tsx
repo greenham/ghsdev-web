@@ -10,6 +10,8 @@ function Connect({ id }: { id: string }) {
             href="https://lnkd.in/svu8Eg"
             target="_blank"
             rel="noopener noreferrer"
+            variant="dark"
+            className="p-4"
           >
             <i className="fa fa-linkedin fa-border fa-4x"></i>
           </Button>
@@ -17,10 +19,16 @@ function Connect({ id }: { id: string }) {
             href="https://github.com/greenham"
             target="_blank"
             rel="noopener noreferrer"
+            variant="dark"
+            className="p-4"
           >
             <i className="fa fa-github fa-border fa-4x"></i>
           </Button>
-          <Button href="mailto:connect@ghsdev.me">
+          <Button
+            href="mailto:connect@ghsdev.me"
+            variant="dark"
+            className="p-4"
+          >
             <i className="fa fa-envelope fa-border fa-4x"></i>
           </Button>
         </Stack>

@@ -2,8 +2,8 @@ import { Container } from "react-bootstrap";
 
 function Contact({ id }: { id: string }) {
   return (
-    <Container id={id}>
-      <h1>Contact</h1>
+    <Container id={id} className="my-5">
+      <h1 className="display-1">Contact</h1>
     </Container>
   );
 }

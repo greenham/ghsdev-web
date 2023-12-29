@@ -96,7 +96,7 @@ function Portfolio({ id }: { id: string }) {
         </p>
       ),
       links: {
-        href: "https://github.com/greenham/volum.io",
+        href: "https://github.com/greenham/v2w.app",
         label: "View on GitHub",
       },
     },

@@ -1,7 +1,16 @@
-import { Badge, Card, Col, Container, Row, Stack } from "react-bootstrap";
+import {
+  Alert,
+  Badge,
+  Card,
+  Col,
+  Container,
+  Row,
+  Stack,
+} from "react-bootstrap";
 import arcadePitScheduler from "../assets/arcade-pit-scheduler.png";
 import fgfmThumbnail from "../assets/fgfm.png";
 import helpaThumbnail from "../assets/helpa.png";
+import v2wThumbnail from "../assets/v2w.png";
 
 function Portfolio({ id }: { id: string }) {
   const portfolio = [
@@ -11,9 +20,9 @@ function Portfolio({ id }: { id: string }) {
       imageUrl: arcadePitScheduler,
       tags: ["React", "Koa", "MongoDB", "Twitch OAuth"],
       description: (
-        <>
-          A web app that allows contestants to log in via Twitch and apply to
-          the virtual game show <em>ArcadePit</em>,{" "}
+        <p>
+          A web app that allows contestants to log in via Twitch and apply to be
+          a guest on the virtual game show <em>ArcadePit</em>,{" "}
           <a
             href="https://twitch.tv/smight"
             target="_blank"
@@ -22,7 +31,7 @@ function Portfolio({ id }: { id: string }) {
             broadcast weekly on Twitch
           </a>
           . Also provides an admin panel to manage selections and scheduling.
-        </>
+        </p>
       ),
     },
     {
@@ -38,12 +47,12 @@ function Portfolio({ id }: { id: string }) {
         "Twitch OAuth",
       ],
       description: (
-        <>
+        <p>
           An automated, continuous stream of video content and music, streaming
           to Twitch via OBS Studio and controlled by a custom bot using Node.js.
           Also provides chat and web interfaces for users to browse+request
           videos on-demand and an admin panel for easy remote management.
-        </>
+        </p>
       ),
     },
     {
@@ -59,13 +68,13 @@ function Portfolio({ id }: { id: string }) {
         "MongoDB",
       ],
       description: (
-        <>
+        <p>
           Used by the <em>The Legend of Zelda: A Link to the Past</em>{" "}
           speedrunning community, this Discord+Twitch bot provides a repository
           of helpful links, alerts for when ALttP streams go live, and
           automation to assist with various tasks like creating race rooms.
           Includes a web-based admin panel to manage commands and configuration.
-        </>
+        </p>
       ),
       links: {
         href: "https://github.com/greenham/helpasaur-king",
@@ -75,16 +84,16 @@ function Portfolio({ id }: { id: string }) {
     {
       title: "volum.io",
       url: "https://v2w.app",
-      imageUrl: "https://v2w.app/screenshot.png",
+      imageUrl: v2wThumbnail,
       tags: ["React", "TypeScript", "Vite", "GitHub Pages"],
       description: (
-        <>
+        <p>
           A free web app for chefs and home cooks alike that supports converting
           imprecise volumetric measurements of ingredients to weight. By
           providing a simple interface for inputting several ingredients and
           volumes to convert to weight, the goal of this app is to make the
           transition to cooking-by-weight easy and accessible to everyone.
-        </>
+        </p>
       ),
       links: {
         href: "https://github.com/greenham/volum.io",
@@ -95,8 +104,16 @@ function Portfolio({ id }: { id: string }) {
 
   return (
     <Container id={id} className="my-5">
-      <h1 className="display-1">Portfolio</h1>
-      <Row xs={1} md={2} lg={2} className="row-gap-5 col-gap-4">
+      <h1 className="display-1">
+        <i className="fa-solid fa-swatchbook px-2"></i>Portfolio
+      </h1>
+      <Alert variant="info">
+        <i className="fa-solid fa-pencil px-2"></i>
+        <strong>Note</strong> - This list is not comprehensive. I can't share
+        every project I've worked on for NDA and privacy reasons, but the
+        following are a few that I'm particularly proud of.
+      </Alert>
+      <Row xs={1} md={2} lg={2} className="g-4">
         {portfolio.map((item, itemIndex) => {
           return (
             <Col key={itemIndex}>
@@ -105,8 +122,7 @@ function Portfolio({ id }: { id: string }) {
                   <Card.Img
                     variant="top"
                     src={item.imageUrl}
-                    width="400"
-                    height="350"
+                    className="img-fluid"
                   />
                 </a>
                 <Card.Body className="flex-grow-1 py-5">
@@ -115,7 +131,7 @@ function Portfolio({ id }: { id: string }) {
                       <h4>{item.title}</h4>
                     </Card.Link>
                   </Card.Title>
-                  <Card.Text>
+                  <Card.Text as="div">
                     <div className="lead">{item.description}</div>
                   </Card.Text>
                   {item.links && (

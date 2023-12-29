@@ -61,9 +61,9 @@ function Portfolio({ id }: { id: string }) {
       tags: ["React", "TypeScript", "Vite", "GitHub Pages"],
       description: (
         <>
-          A free web application for chefs and home cooks alike that supports
-          converting imprecise volumetric measurements of ingredients to weight.
-          By providing a simple interface for inputting several ingredients and
+          A free web app for chefs and home cooks alike that supports converting
+          imprecise volumetric measurements of ingredients to weight. By
+          providing a simple interface for inputting several ingredients and
           volumes to convert to weight, the goal of this app is to make the
           transition to cooking-by-weight easy and accessible to everyone.
         </>
@@ -94,7 +94,7 @@ function Portfolio({ id }: { id: string }) {
                     </Card.Link>
                   </Card.Title>
                   <Card.Text>
-                    <p className="lead">{item.description}</p>
+                    <div className="lead">{item.description}</div>
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer>

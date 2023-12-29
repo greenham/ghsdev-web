@@ -27,7 +27,7 @@ function TopNav() {
               <i className="fa-solid fa-user-tie px-2"></i>About Me
             </Nav.Link>
             <Nav.Link href="#portfolio">
-              <i className="fa-solid fa-timeline px-2"></i>Portfolio
+              <i className="fa-solid fa-swatchbook px-2"></i>Portfolio
             </Nav.Link>
             <Nav.Link href="#skills">
               <i className="fa-regular fa-rectangle-list px-2"></i>Skills

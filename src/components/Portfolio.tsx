@@ -148,7 +148,7 @@ function Portfolio({ id }: { id: string }) {
                   <Stack
                     direction="horizontal"
                     gap={1}
-                    className="font-monospace"
+                    className="font-monospace flex-wrap"
                   >
                     {item.tags.map((t, i) => (
                       <Badge bg="dark" key={i}>

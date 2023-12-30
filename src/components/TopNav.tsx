@@ -37,7 +37,7 @@ function TopNav() {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <Navbar className="justify-content-end">
+        <Navbar.Collapse className="justify-content-end">
           <Nav.Link
             href="https://github.com/greenham"
             target="_blank"
@@ -45,7 +45,7 @@ function TopNav() {
           >
             <i className="fa-brands fa-github px-2"></i>GitHub
           </Nav.Link>
-        </Navbar>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );

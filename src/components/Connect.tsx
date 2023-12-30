@@ -12,8 +12,12 @@ function Connect({ id }: { id: string }) {
         and projects. Feel free to reach out to me on LinkedIn, GitHub, or via
         email.
       </Alert>
-      <div className="p-5 bg-body-tertiary rounded-3">
-        <Stack direction="horizontal" gap={3}>
+      <div className="p-5 bg-body-tertiary rounded-3 ">
+        <Stack
+          direction="horizontal"
+          gap={3}
+          className="justify-content-center"
+        >
           <Button
             href="https://lnkd.in/svu8Eg"
             target="_blank"

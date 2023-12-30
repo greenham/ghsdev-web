@@ -22,7 +22,7 @@ function Connect({ id }: { id: string }) {
             href="https://lnkd.in/svu8Eg"
             target="_blank"
             rel="noopener noreferrer"
-            variant="outline-success"
+            variant="outline-info"
             className="p-4"
           >
             <i className="fa fa-linkedin fa-4x"></i>
@@ -31,14 +31,14 @@ function Connect({ id }: { id: string }) {
             href="https://github.com/greenham"
             target="_blank"
             rel="noopener noreferrer"
-            variant="outline-success"
+            variant="outline-info"
             className="p-4"
           >
             <i className="fa fa-github fa-4x"></i>
           </Button>
           <Button
             href="mailto:connect@ghsdev.me"
-            variant="outline-success"
+            variant="outline-info"
             className="p-4"
           >
             <i className="fa fa-envelope fa-4x"></i>

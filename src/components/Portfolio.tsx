@@ -127,7 +127,11 @@ function Portfolio({ id }: { id: string }) {
                 </a>
                 <Card.Body className="flex-grow-1 py-5">
                   <Card.Title>
-                    <Card.Link href={item.url}>
+                    <Card.Link
+                      href={item.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <h4>{item.title}</h4>
                     </Card.Link>
                   </Card.Title>

@@ -16,32 +16,32 @@ function Connect({ id }: { id: string }) {
         <Stack
           direction="horizontal"
           gap={3}
-          className="justify-content-center"
+          className="justify-content-center flex-wrap"
         >
           <Button
             href="https://lnkd.in/svu8Eg"
             target="_blank"
             rel="noopener noreferrer"
-            variant="dark"
+            variant="outline-success"
             className="p-4"
           >
-            <i className="fa fa-linkedin fa-border fa-4x"></i>
+            <i className="fa fa-linkedin fa-4x"></i>
           </Button>
           <Button
             href="https://github.com/greenham"
             target="_blank"
             rel="noopener noreferrer"
-            variant="dark"
+            variant="outline-success"
             className="p-4"
           >
-            <i className="fa fa-github fa-border fa-4x"></i>
+            <i className="fa fa-github fa-4x"></i>
           </Button>
           <Button
             href="mailto:connect@ghsdev.me"
-            variant="dark"
+            variant="outline-success"
             className="p-4"
           >
-            <i className="fa fa-envelope fa-border fa-4x"></i>
+            <i className="fa fa-envelope fa-4x"></i>
           </Button>
         </Stack>
       </div>

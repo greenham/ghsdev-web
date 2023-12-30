@@ -22,7 +22,7 @@ function TopNav() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="top-nav" />
         <Navbar.Collapse id="top-nav">
-          <Nav className="me-auto">
+          <Nav>
             <Nav.Link href="#about">
               <i className="fa-solid fa-user-tie px-2"></i>About Me
             </Nav.Link>
@@ -36,15 +36,15 @@ function TopNav() {
               <i className="fa-regular fa-handshake px-2"></i>Connect
             </Nav.Link>
           </Nav>
-        </Navbar.Collapse>
-        <Navbar.Collapse className="justify-content-end">
-          <Nav.Link
-            href="https://github.com/greenham"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa-brands fa-github px-2"></i>GitHub
-          </Nav.Link>
+          <Nav className="ms-auto">
+            <Nav.Link
+              href="https://github.com/greenham"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-github px-2"></i>GitHub
+            </Nav.Link>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>

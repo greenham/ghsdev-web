@@ -69,11 +69,11 @@ function Portfolio({ id }: { id: string }) {
       ],
       description: (
         <p>
-          Used by the <em>The Legend of Zelda: A Link to the Past</em>{" "}
-          speedrunning community, this Discord+Twitch bot provides a repository
-          of helpful links, alerts for when ALttP streams go live, and
-          automation to assist with various tasks like creating race rooms.
-          Includes a web-based admin panel to manage commands and configuration.
+          Used by the <em>Legend of Zelda: A Link to the Past</em> speedrunning
+          community, this Discord+Twitch bot provides a repository of helpful
+          links, alerts for when ALttP streams go live, and automation to assist
+          with various tasks like creating race rooms. Includes a web-based
+          admin panel to manage commands and configuration.
         </p>
       ),
       links: {

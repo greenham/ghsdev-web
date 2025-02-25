@@ -10,17 +10,17 @@ function Skills({ id }: { id: string }) {
     {
       title: "Frontend",
       icon: "fa-solid fa-gamepad",
-      items: ["React(+Native)", "Vue.js", "Bootstrap"],
+      items: ["React(+Native)", "Vue.js", "Expo", "Bootstrap"],
     },
     {
       title: "Backend",
       icon: "fa-solid fa-server",
-      items: ["ASP.NET", "NestJS", "Express.js",  "Koa", "Laravel"],
+      items: ["ASP.NET", "NestJS", "Express.js", "Koa", "Laravel"],
     },
     {
       title: "Data Storage",
       icon: "fa-solid fa-database",
-      items: ["MySQL", "PostgreSQL", "MongoDB", "Redis", "Memcache"],
+      items: ["MySQL", "PostgreSQL", "MongoDB", "Neo4j", "Redis", "Memcache"],
     },
     {
       title: "DevOps",
@@ -62,7 +62,7 @@ function Skills({ id }: { id: string }) {
     {
       title: "Other",
       icon: "",
-      items: ["Wordpress", "Google Analytics (UA, GA4)", "Odoo", "HubSpot"],
+      items: ["Wordpress", "Google Analytics", "Odoo", "HubSpot"],
     },
   ];
 

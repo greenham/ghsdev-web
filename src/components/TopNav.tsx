@@ -15,8 +15,8 @@ function TopNav() {
               className="d-inline-block align-top"
             />
             <Stack direction="vertical" gap={0}>
-              <h4 className="mb-0 fw-bold">greenHam</h4>
-              <small className="fs-6 text-muted">Senior Web Developer</small>
+              <h4 className="mb-0 fw-bold">Christopher Ham</h4>
+              <small className="fs-6 text-muted">Senior Software Engineer</small>
             </Stack>
           </Stack>
         </Navbar.Brand>

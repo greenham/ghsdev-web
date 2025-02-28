@@ -5,12 +5,12 @@ function Skills({ id }: { id: string }) {
     {
       title: "Languages",
       icon: "fa-solid fa-language",
-      items: ["(Java|Type)Script", "Python", "C#", "PHP", "HTML+CSS"],
+      items: ["(Java|Type)Script", "Python", "C#", "PHP"],
     },
     {
       title: "Frontend",
       icon: "fa-solid fa-gamepad",
-      items: ["React(+Native)", "Vue.js", "Expo", "Bootstrap"],
+      items: ["React(+Native)", "Vue.js", "Expo", "Tailwind", "Bootstrap"],
     },
     {
       title: "Backend",
@@ -18,23 +18,22 @@ function Skills({ id }: { id: string }) {
       items: ["ASP.NET", "NestJS", "Express.js", "Koa", "Laravel"],
     },
     {
-      title: "Data Storage",
+      title: "Data",
       icon: "fa-solid fa-database",
-      items: ["MySQL", "PostgreSQL", "MongoDB", "Neo4j", "Redis", "Memcache"],
+      items: ["(My/MS/Postgre)SQL", "MongoDB", "Neo4j", "Redis", "RabbitMQ"],
     },
     {
-      title: "DevOps",
+      title: "CI/CD",
       icon: "fa-solid fa-truck-fast",
       items: [
         "Docker",
-        "Git",
         "GitHub+Actions",
-        "BitBucket",
+        "BitBucket+Pipelines",
         "Jest",
         "Cypress",
+        "Playwright",
         "Selenium",
-        "Jenkins",
-        "Nagios",
+        "Jenkins"
       ],
     },
     {
@@ -44,6 +43,7 @@ function Skills({ id }: { id: string }) {
         "CDK",
         "Lambda",
         "ECS",
+        "Fargate",
         "EC2",
         "RDS",
         "SQS",
@@ -55,7 +55,7 @@ function Skills({ id }: { id: string }) {
       ],
     },
     {
-      title: "Software/Tools",
+      title: "Tools",
       icon: "fa-solid fa-toolbox",
       items: ["Jira", "Confluence", "Google Suite", "Figma", "Mermaid"],
     },
